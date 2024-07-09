@@ -35,7 +35,10 @@
     max-width: 1140px;
     margin: 0 auto;
   }
-
+  .section-content{
+    max-width: 850px;
+    margin: 0 auto;
+  }
   .section-title{
     font-size: 32px;
     font-weight: 800;
@@ -182,4 +185,19 @@
   .item-btn:hover{
     border-color: transparent;
     color: #ff6f3c;
+  }
+
+  /* My inspiration style */
+  .inspiration{
+    margin: 0 auto;
+  }
+  .inspiration-items{
+    border:1px solid #0D1321;
+    padding: 32px;
+    border-radius: 10px;
+  }
+  .inspiration-items iframe{
+    outline: none;
+    border-radius: 10px;
+    border: none;
   }
