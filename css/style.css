@@ -219,6 +219,7 @@
     gap: 24px;
     box-shadow:0.3px 0.5px 3px #5c5b5b;
     padding: 40px;
+    transition: all 0.6s ease-in-out;
   }
   .target-items:hover{
     box-shadow: none;
@@ -263,3 +264,30 @@
     color: #ffffff;
     text-decoration: none;
   }
+  /* Footer style */
+  footer{
+    padding: 38px 0;
+    background-color: #5c5b5b;
+  }
+  footer .footer-content{
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  footer .footer-content h2{
+    font-size: 20px;
+    font-weight: 600;
+    color: #0D1321;
+  }
+  footer .footer-content h2 span{
+    color: #ff6f3c;
+  }
+  footer .footer-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+  }
+  
