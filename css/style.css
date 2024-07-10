@@ -379,7 +379,8 @@
   /* Footer style */
   footer{
     padding: 38px 0;
-    background-color: #5c5b5b;
+    background-color: rgba(13, 19, 33,0.3);
+    position: relative;
   }
   footer .footer-content{
     max-width: 1140px;
@@ -402,4 +403,18 @@
     align-items: center;
     gap: 24px;
   }
-  
+  footer .footer-items img{
+    transition: all 0.7s ease-in-out;
+  }
+  footer .footer-items img:hover{
+    transform: scale(1.2);
+    /* box-shadow: 0.3px 0.5px 2px #ffffff; */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 100%;
+  }
+  footer .go-top{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+
+  }
