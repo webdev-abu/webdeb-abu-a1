@@ -35,7 +35,7 @@
     max-width: 1140px;
     margin: 0 auto;
   }
-  .section-content{
+  .section-content .contact-content{
     max-width: 850px;
     margin: 0 auto;
   }
@@ -88,7 +88,7 @@
   /* Bannar style */
   .bannar{
     max-height: 650px;
-    background-image:linear-gradient(0deg, rgba(35, 49, 66,0.1),rgba(236, 236, 236,0.2)), url(../assets/Hero-bg.png);
+    background-image:linear-gradient(180deg, rgba(35, 49, 66,0.3),rgba(236, 236, 236,0.6)), url(../assets/Hero-bg.png);
     background-repeat:no-repeat;
     background-position: top left, bottom right;
     background-position: center;
@@ -290,4 +290,66 @@
     align-items: center;
     gap: 24px;
   }
-  
+  /*  contact style */
+  .contact{
+    /* max-height: 320px; */
+    background-image:linear-gradient(0deg, rgba(35, 49, 66,0.2),rgba(0, 0, 0, 0.2)), url(../assets/handshake.jpg);
+    background-repeat:no-repeat;
+    background-position:center,center;
+    background-size:cover;
+    margin: 40px 0 80px;
+    padding: 64px 48px;
+    border-radius: 10px;
+  }
+  .contact .contact-content{
+    max-width: 850px;
+    margin: 0 auto;
+  }
+
+  .contact .contact-title{
+    font-size: 32px;
+    font-weight: 800;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+.contact .contact-description{
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 48px;
+    opacity: 70%;
+}
+  .contact .contact-form{
+    display: flex;
+    justify-content: center;
+  }
+  .contact .contact-form input[type=text]{
+    /* display: inline-block; */
+    width: 550px;
+    padding:17px 20px;
+    border-radius: 8px;
+  }
+  .contact .contact-form input[type=text]:focus{
+    outline:none;
+  }
+  .contact ::placeholder{
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(13, 19, 33,0.4);
+  }
+  .contact .contact-form input[type=submit]{
+    padding: 17px 20px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #0D1321;
+    margin-left: 10px;
+    border-radius: 8px;
+    transition: all 0.7s ease-in-out;
+    cursor: pointer;
+  }
+  .contact .contact-form input[type=submit]:hover{
+    background-color: transparent;
+    color: #ffffff;
+  }
