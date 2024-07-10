@@ -6,6 +6,10 @@
     margin: 0;
     box-sizing: border-box;
 }
+/* img{
+  width: 100%;
+  height: 100%;
+} */
 
 /* share style */
 
@@ -264,6 +268,114 @@
     color: #ffffff;
     text-decoration: none;
   }
+  /* my next target */
+  
+  .next-target .next-target-content{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .next-target .next-target-content .next-target-items{
+    padding: 40px;
+    border: 1px solid #0D1321;
+    border-radius: 16px;
+    display: flex;
+    gap: 24px;
+  }
+  .next-target .next-target-content .next-target-items img{
+    width: 100px;
+    height: auto;
+    padding: 16px 0;
+  }
+  .next-target .next-target-content .next-target-item{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .next-target .next-target-item .next-target-title{
+    font-size: 24px;
+    font-weight:800;
+    color: #0D1321;
+  }
+  .next-target .next-target-item .next-target-description{
+    font-size: 16px;
+    font-weight: 400;
+    color: #0D1321;
+    opacity: 70%;
+  }
+  .next-target .next-target-item a{
+    font-size: 16px;
+    font-weight: 400;
+    color: #0D1321;
+    transition: all 0.7s ease-in-out;
+  }
+  .next-target .next-target-item a:hover{
+    text-decoration: none;
+    color: #ff6f3c;
+  }
+/*  contact style */
+.contact{
+  background-image:linear-gradient(0deg, rgba(35, 49, 66,0.2),rgba(0, 0, 0, 0.2)), url(../assets/handshake.jpg);
+  background-repeat:no-repeat;
+  background-position:center,center;
+  background-size:cover;
+  margin: 40px 0 80px;
+  padding: 64px 48px;
+  border-radius: 10px;
+}
+.contact .contact-content{
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.contact .contact-title{
+  font-size: 32px;
+  font-weight: 800;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 24px;
+}
+.contact .contact-description{
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 48px;
+  opacity: 70%;
+}
+.contact .contact-form{
+  display: flex;
+  justify-content: center;
+}
+.contact .contact-form input[type=text]{
+  /* display: inline-block; */
+  width: 550px;
+  padding:17px 20px;
+  border-radius: 8px;
+}
+.contact .contact-form input[type=text]:focus{
+  outline:none;
+}
+.contact ::placeholder{
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(13, 19, 33,0.4);
+}
+.contact .contact-form input[type=submit]{
+  padding: 17px 20px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #0D1321;
+  margin-left: 10px;
+  border-radius: 8px;
+  transition: all 0.7s ease-in-out;
+  cursor: pointer;
+}
+.contact .contact-form input[type=submit]:hover{
+  background-color: transparent;
+  color: #ffffff;
+}
+
   /* Footer style */
   footer{
     padding: 38px 0;
@@ -290,66 +402,4 @@
     align-items: center;
     gap: 24px;
   }
-  /*  contact style */
-  .contact{
-    /* max-height: 320px; */
-    background-image:linear-gradient(0deg, rgba(35, 49, 66,0.2),rgba(0, 0, 0, 0.2)), url(../assets/handshake.jpg);
-    background-repeat:no-repeat;
-    background-position:center,center;
-    background-size:cover;
-    margin: 40px 0 80px;
-    padding: 64px 48px;
-    border-radius: 10px;
-  }
-  .contact .contact-content{
-    max-width: 850px;
-    margin: 0 auto;
-  }
-
-  .contact .contact-title{
-    font-size: 32px;
-    font-weight: 800;
-    color: #ffffff;
-    text-align: center;
-    margin-bottom: 24px;
-  }
-.contact .contact-description{
-    font-size: 16px;
-    font-weight: 400;
-    color: #ffffff;
-    text-align: center;
-    margin-bottom: 48px;
-    opacity: 70%;
-}
-  .contact .contact-form{
-    display: flex;
-    justify-content: center;
-  }
-  .contact .contact-form input[type=text]{
-    /* display: inline-block; */
-    width: 550px;
-    padding:17px 20px;
-    border-radius: 8px;
-  }
-  .contact .contact-form input[type=text]:focus{
-    outline:none;
-  }
-  .contact ::placeholder{
-    font-size: 16px;
-    font-weight: 400;
-    color: rgba(13, 19, 33,0.4);
-  }
-  .contact .contact-form input[type=submit]{
-    padding: 17px 20px;
-    font-size: 20px;
-    font-weight: 600;
-    color: #0D1321;
-    margin-left: 10px;
-    border-radius: 8px;
-    transition: all 0.7s ease-in-out;
-    cursor: pointer;
-  }
-  .contact .contact-form input[type=submit]:hover{
-    background-color: transparent;
-    color: #ffffff;
-  }
+  
